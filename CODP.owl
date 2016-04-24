@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/cristiana/ontologies/2015/7/untitled-ontology-139"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/cristiana/ontologies/2015/7/untitled-ontology-139">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complainant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complaint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complaint_Recipient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Request"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThirdParty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#espressedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComplaintMotivation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRequest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#justifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Space"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Stamp_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Time_occurence"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Fact"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Medium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Motivation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Request"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Complainant"/>
+        <Class IRI="#Complaint_Recipient"/>
+        <Class IRI="#ThirdParty"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Motivation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Motivation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Motivation"/>
+        <Class IRI="#Request"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Complaint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#espressedBy"/>
+        <Class IRI="#Complaint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComplaintMotivation"/>
+        <Class IRI="#Complaint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRequest"/>
+        <Class IRI="#Complaint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#justifiedBy"/>
+        <Class IRI="#Motivation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeBy"/>
+        <Class IRI="#Complaint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeBy"/>
+        <Class IRI="#Request"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportedBy"/>
+        <Class IRI="#Fact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Fact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#espressedBy"/>
+        <Class IRI="#Medium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComplaintMotivation"/>
+        <Class IRI="#Motivation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRequest"/>
+        <Class IRI="#Request"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Complainant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Complaint_Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#ThirdParty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#justifiedBy"/>
+        <Class IRI="#Fact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#madeBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportedBy"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Space"/>
+        <Class IRI="#Complaint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Space"/>
+        <Class IRI="#Evidence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Space"/>
+        <Class IRI="#Fact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Space"/>
+        <Class IRI="#Motivation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Space"/>
+        <Class IRI="#Request"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Stamp_time"/>
+        <Class IRI="#Complaint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Stamp_time"/>
+        <Class IRI="#Evidence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Stamp_time"/>
+        <Class IRI="#Fact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Stamp_time"/>
+        <Class IRI="#Motivation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Stamp_time"/>
+        <Class IRI="#Request"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Time_occurence"/>
+        <Class IRI="#Complaint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Time_occurence"/>
+        <Class IRI="#Evidence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Time_occurence"/>
+        <Class IRI="#Fact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Time_occurence"/>
+        <Class IRI="#Motivation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Time_occurence"/>
+        <Class IRI="#Request"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Space"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Stamp_time"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Time_occurence"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An Agent can act, i.e. play the &apos;actor&apos; role wrt. an action. It is a holder for propositional attitudes” (LKIF)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Complainant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Person, organization, or its representative, making a complaint (ISO).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Complaint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class serves as the access point for the pattern. Is an “[E]xpression of dissatisfaction made to an organization, related to its products, or the complaints-handling process itself, where a response or resolution is explicitly or implicitly expected” (ISO). 
+The complaint entity differs from the “act of complaining”.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Complaint_Recipient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Person, organization, or its representative, receiving a complaint (ISO)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Evidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Proof(s) supporting the facts described in the complaint. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A medium is a bearer of expressions, i.e. externalized propositions. Propositions become expressions once they are externalized through some medium (LKIF). Examples are: document, oral, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Motivation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Subjective motive of dissatisfaction, justified by facts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Request</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A demand, claim set by the Complainant, e.g., financial compensation, apology, response, resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThirdParty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Any natural persons or any legal person, who is acting, including through any person acting in his name or on his behalf, for purposes not related to the object of the complaint.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
