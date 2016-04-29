@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl"
+<rdf:RDF xmlns="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#"
      xml:base="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl"
+     xmlns:lkif-expression="http://www.estrellaproject.org/lkif-core/expression.owl#"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:cop="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+	 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -32,6 +35,23 @@
         <cpannotationschema:coversRequirements>Which medium was used to express the complaint?</cpannotationschema:coversRequirements>
         <dct:date>2016-04-24</dct:date>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -291,6 +311,7 @@
 
     <owl:Class rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium">
         <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+        <skos:closeMatch rdf:resource="http://www.estrellaproject.org/lkif-core/expression.owl#Medium"/>
         <rdfs:comment>A medium is a bearer of expressions, i.e. externalized propositions. Propositions become expressions once they are externalized through some medium (LKIF imported definition). In some complaint datasets, the medium is implicit.</rdfs:comment>
         <rdfs:label>Medium</rdfs:label>
     </owl:Class>
