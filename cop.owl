@@ -18,7 +18,7 @@
         <cpannotationschema:coversRequirements>What is the claim of the complainant?</cpannotationschema:coversRequirements>
         <cpannotationschema:hasIntent>To represent the core constituents of a complaint</cpannotationschema:hasIntent>
         <dct:creator>Cristiana Santos</dct:creator>
-        <cpannotationschema:coversRequirements>Which facts happened in “this” date or in “this” place?</cpannotationschema:coversRequirements>
+        <cpannotationschema:coversRequirements>Which facts happened in 'this' date or in 'this' place?</cpannotationschema:coversRequirements>
         <dct:contibutor>Pompeu Casanovas</dct:contibutor>
         <dct:rights>This ontology is distributed under a Creative Commons CC-BY 4.0 license - https://creativecommons.org/licenses/by/4.0/</dct:rights>
         <dct:contibutor>Cedric Pruski</dct:contibutor>
