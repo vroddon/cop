@@ -61,6 +61,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -275,6 +281,7 @@
         <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
         <rdfs:comment>An Agent can act, i.e. play the &apos;actor&apos; role wrt. an action. It is a holder for propositional attitudes. As for this definition, we have adopted LKIF definition of Agent.</rdfs:comment>
         <rdfs:label>Agent</rdfs:label>
+        <skos:relatedMatch>http://www.estrellaproject.org/lkif-core/expression.owl#Agent</skos:relatedMatch>
     </owl:Class>
     
 
@@ -378,6 +385,16 @@
     <!-- http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence -->
 
     <owl:Class rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
         <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"/>
         <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
@@ -414,6 +431,12 @@
     <!-- http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation -->
 
     <owl:Class rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
         <rdfs:comment>Subjective motive of dissatisfaction, justified by facts.</rdfs:comment>
         <rdfs:label>Motivation</rdfs:label>
