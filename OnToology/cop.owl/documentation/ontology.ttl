@@ -192,6 +192,16 @@ dct:license
       rdfs:label "Complaint" ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
+                owl:onProperty :hasComplaintMotivation ;
+                owl:someValuesFrom :Motivation
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty :madeBy ;
+                owl:someValuesFrom :Agent
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
                 owl:onProperty :addressedTo ;
                 owl:someValuesFrom :Agent
               ] ;
@@ -202,18 +212,8 @@ dct:license
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:onProperty :hasComplaintMotivation ;
-                owl:someValuesFrom :Motivation
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
                 owl:onProperty :expressedIn ;
                 owl:someValuesFrom :Medium
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:onProperty :madeBy ;
-                owl:someValuesFrom :Agent
               ] ;
       owl:disjointWith :Fact , :Request , :Evidence , :Motivation , :Medium .
 
