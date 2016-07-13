@@ -1,0 +1,124 @@
+{
+  "@context" : {
+    "Fact" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"
+    },
+    "supportedBy" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy",
+      "@type" : "@id"
+    },
+    "Complaint_Recipient" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient"
+    },
+    "Request" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"
+    },
+    "hasSpace" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "relatedMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#relatedMatch"
+    },
+    "basedOn" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn",
+      "@type" : "@id"
+    },
+    "hasThirdParty" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty",
+      "@type" : "@id"
+    },
+    "hasComplaintMotivation" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation",
+      "@type" : "@id"
+    },
+    "ThirdParty" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty"
+    },
+    "Medium" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"
+    },
+    "contibutor" : {
+      "@id" : "http://purl.org/dc/terms/contibutor"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasStampTime" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "Evidence" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"
+    },
+    "expressedIn" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn",
+      "@type" : "@id"
+    },
+    "closeMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch"
+    },
+    "Agent" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Complaint" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "scenarios" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"
+    },
+    "Motivation" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Complainant" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant"
+    },
+    "coversRequirements" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "addressedTo" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo",
+      "@type" : "@id"
+    },
+    "hasConsequences" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences"
+    },
+    "hasIntent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"
+    },
+    "hasTimeOccurrence" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "justifiedBy" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "madeBy" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy",
+      "@type" : "@id"
+    },
+    "hasRequest" : {
+      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest",
+      "@type" : "@id"
+    }
+  }
+}
