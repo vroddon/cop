@@ -1,21 +1,20 @@
 {
   "@context" : {
     "Fact" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"
+      "@id" : "https://w3id.org/vocabulary/cop#Fact"
     },
     "supportedBy" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy",
+      "@id" : "https://w3id.org/vocabulary/cop#supportedBy",
       "@type" : "@id"
     },
     "Complaint_Recipient" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient"
+      "@id" : "https://w3id.org/vocabulary/cop#Complaint_Recipient"
     },
     "Request" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"
+      "@id" : "https://w3id.org/vocabulary/cop#Request"
     },
     "hasSpace" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@id" : "https://w3id.org/vocabulary/cop#hasSpace"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
@@ -24,22 +23,22 @@
       "@id" : "http://www.w3.org/2004/02/skos/core#relatedMatch"
     },
     "basedOn" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn",
+      "@id" : "https://w3id.org/vocabulary/cop#basedOn",
       "@type" : "@id"
     },
     "hasThirdParty" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty",
+      "@id" : "https://w3id.org/vocabulary/cop#hasThirdParty",
       "@type" : "@id"
     },
-    "hasComplaintMotivation" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation",
+    "part_of" : {
+      "@id" : "https://w3id.org/vocabulary/cop#part_of",
       "@type" : "@id"
     },
     "ThirdParty" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty"
+      "@id" : "https://w3id.org/vocabulary/cop#ThirdParty"
     },
     "Medium" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"
+      "@id" : "https://w3id.org/vocabulary/cop#Medium"
     },
     "contibutor" : {
       "@id" : "http://purl.org/dc/terms/contibutor"
@@ -48,27 +47,31 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "hasStampTime" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime",
+      "@id" : "https://w3id.org/vocabulary/cop#hasStampTime",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
     },
     "Evidence" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"
+      "@id" : "https://w3id.org/vocabulary/cop#Evidence"
     },
     "expressedIn" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn",
+      "@id" : "https://w3id.org/vocabulary/cop#expressedIn",
       "@type" : "@id"
     },
     "closeMatch" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch"
     },
     "Agent" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"
+      "@id" : "https://w3id.org/vocabulary/cop#Agent"
+    },
+    "has_complaint_motivation" : {
+      "@id" : "https://w3id.org/vocabulary/cop#has_complaint_motivation",
+      "@type" : "@id"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
     "Complaint" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"
+      "@id" : "https://w3id.org/vocabulary/cop#Complaint"
     },
     "rights" : {
       "@id" : "http://purl.org/dc/terms/rights"
@@ -77,13 +80,13 @@
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"
     },
     "Motivation" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"
+      "@id" : "https://w3id.org/vocabulary/cop#Motivation"
     },
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
     },
     "Complainant" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant"
+      "@id" : "https://w3id.org/vocabulary/cop#Complainant"
     },
     "coversRequirements" : {
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"
@@ -92,7 +95,7 @@
       "@id" : "http://purl.org/dc/terms/date"
     },
     "addressedTo" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo",
+      "@id" : "https://w3id.org/vocabulary/cop#addressedTo",
       "@type" : "@id"
     },
     "hasConsequences" : {
@@ -102,22 +105,17 @@
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"
     },
     "hasTimeOccurrence" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence",
-      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id" : "https://w3id.org/vocabulary/cop#hasTimeOccurrence"
     },
     "justifiedBy" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy",
+      "@id" : "https://w3id.org/vocabulary/cop#justifiedBy",
       "@type" : "@id"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "madeBy" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy",
-      "@type" : "@id"
-    },
-    "hasRequest" : {
-      "@id" : "http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest",
+      "@id" : "https://w3id.org/vocabulary/cop#madeBy",
       "@type" : "@id"
     }
   }
