@@ -1,0 +1,245 @@
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd0 <http://www.w3.org/2002/07/owl#inverseOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest> <http://www.w3.org/2000/01/rdf-schema#label> "has request" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "The property indicating the Request in the Complaint." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe3 <http://www.w3.org/2002/07/owl#inverseOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdc <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdc <http://www.w3.org/2002/07/owl#onProperty> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fda .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff6 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff5 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fee .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty> <http://www.w3.org/2000/01/rdf-schema#label> "Third Party" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty> <http://www.w3.org/2000/01/rdf-schema#comment> "Any natural persons or any legal person, who is acting, including through any person acting in his name or on his behalf, for purposes not related to the object of the complaint." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd1 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An Agent can act, i.e. play the 'actor' role wrt. an action. It is a holder for propositional attitudes. As for this definition, we have adopted LKIF definition of Agent." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2004/02/skos/core#relatedMatch> "http://www.estrellaproject.org/lkif-core/expression.owl#Agent" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff0 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fef .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd5 <http://www.w3.org/2002/07/owl#inverseOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffc <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffb .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe7 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "supported by" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The object property stating that a Fact is supported by an Evidence." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fea .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe2 <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd8 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdc .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff4 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fed .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> <http://www.w3.org/2000/01/rdf-schema#label> "addressed to" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "The property describing the agent recipient of the complaint or recipient of the request" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffc .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "justified by" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Expresses the relation between the Motivation and the Fact(s)." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> <http://www.w3.org/2000/01/rdf-schema#label> "Request" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> <http://www.w3.org/2000/01/rdf-schema#comment> "A demand, claim or remedy set by the Complainant, e.g., financial compensation, apology, response, resolution, settlement, or other action." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd2 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd3 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd4 <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffa .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe6 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> <http://www.w3.org/2000/01/rdf-schema#label> "Motivation" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> <http://www.w3.org/2000/01/rdf-schema#comment> "Subjective motive of dissatisfaction, justified by facts." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd4 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe1 <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fda <http://www.w3.org/2002/07/owl#inverseOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant> <http://www.w3.org/2000/01/rdf-schema#label> "Complainant" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant> <http://www.w3.org/2000/01/rdf-schema#comment> "Person, organization, or its representative, making a complaint (ISO 10002:2014). The Complainant may be implicit in some datasets." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe4 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff3 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fec .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd9 <http://www.w3.org/2002/07/owl#onProperty> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd7 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences> "Heterogeneous models for complaints can be aligned to this pattern, which then acts as a semantic facade to different complaint management applications (such as complaint handling process, customer complaint management, customer relation management)" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/creator> "Cristiana Santos" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/contibutor> "Victor Rodriguez" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> "To represent the core constituents of a complaint" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "What is the claim of the complainant?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/title> "Complaint Ontology Pattern" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "Which facts happened in 'this' date or in 'this' place?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "Which medium was used to express the complaint?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/contibutor> "Cedric Pruski" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/contibutor> "Leon van der Torre" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "What motivates the complaint?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> "A complaint refers to the narrated facts of an agent, grounded with motive and a request, through a specific medium (used to generate the complaint document), where evidence may support the facts." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "Who is the complaint recipient?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "Who is involved in this complaint?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "What evidences are used to prove the narrated fact?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/contibutor> "Pompeu Casanovas" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/contibutor> "Marcos Da Silveira" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> "Which facts describe the complaint?" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/date> "2016-04-24" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl> <http://purl.org/dc/terms/rights> "This ontology is distributed under a Creative Commons CC-BY 4.0 license - https://creativecommons.org/licenses/by/4.0/" .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd3 <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe1 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdf .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe0 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2000/01/rdf-schema#label> "Complaint" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fde .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is the cornerstone for the pattern. We defined as an expression of dissatisfaction issued by a Complainant against a Complaint-Recipient, describing the facts, motivations, where a response or resolution is explicitly or implicitly expected. The complaint entity differs from the act of complaining, which is out of the scope of this ODP , as it is out of our use-case" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe2 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe5 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> <http://www.w3.org/2000/01/rdf-schema#label> "made by" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The property relating the Complaint and Request to an Agent. A complaint and a request are made by an agent." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff9 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdf <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdf <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff9 <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff8 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe0 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe0 <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient> <http://www.w3.org/2000/01/rdf-schema#label> "Complaint Recipient" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient> <http://www.w3.org/2000/01/rdf-schema#comment> "Person, organization, or its representative, receiving a complaint (ISO 10002:2014). This concept varies from the addressee, which may be the Recipient, or any other that shall receive the complaint. The Complainant Recipient may be implicit in some datasets." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient> <http://www.w3.org/2002/07/owl#equivalentClass> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdd .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff2 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7feb .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Proof(s) supporting the facts described in the complaint. Possibilities of Evidence are receipt, contract, testimony, email, and photo." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd6 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd9 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation> <http://www.w3.org/2000/01/rdf-schema#label> "has complaint motivation" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation expressing the Motivation of a Complaint." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd2 <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fde <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fde <http://www.w3.org/2002/07/owl#onProperty> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fde <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff7 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff6 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn> <http://www.w3.org/2000/01/rdf-schema#label> "expressed in" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that declares by which Medium the Complaint is expressed." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty> <http://www.w3.org/2000/01/rdf-schema#label> "has third party" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property describing agents which are third parties in a complaint" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff1 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd7 <http://www.w3.org/2002/07/owl#inverseOf> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> <http://www.w3.org/2000/01/rdf-schema#label> "Fact" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> <http://www.w3.org/2000/01/rdf-schema#comment> "Proposition about something described in a complaint. Facts are observed events by the complainant." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn> <http://www.w3.org/2000/01/rdf-schema#label> "based on" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property declaring the Facts that are the base of a Complaint." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd1 <http://www.w3.org/2002/07/owl#onProperty> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd0 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe4 <http://www.w3.org/2002/07/owl#onProperty> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe3 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdd <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdb .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fdd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime> <http://www.w3.org/2000/01/rdf-schema#domain> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff0 .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.estrellaproject.org/lkif-core/expression.owl#Medium> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> <http://www.w3.org/2000/01/rdf-schema#label> "Medium" .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> <http://www.w3.org/2000/01/rdf-schema#comment> "A medium is a bearer of expressions, i.e. externalized propositions. Propositions become expressions once they are externalized through some medium (LKIF imported definition). In some complaint datasets, the medium is implicit." .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> <http://www.w3.org/2002/07/owl#disjointWith> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation> .
+<http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fea <http://www.w3.org/2002/07/owl#unionOf> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe9 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd6 <http://www.w3.org/2002/07/owl#onProperty> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd5 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe8 .
+_:AX2dX46bba129X3aX155e502c60dX3aXX2dX7fe9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint> .

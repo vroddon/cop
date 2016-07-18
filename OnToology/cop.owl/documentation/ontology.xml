@@ -1,0 +1,398 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:lkif-expression="http://www.estrellaproject.org/lkif-core/expression.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <owl:onProperty rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact">
+    <rdfs:label>Fact</rdfs:label>
+    <rdfs:comment>Proposition about something described in a complaint. Facts are observed events by the complainant.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy">
+    <rdfs:label>made by</rdfs:label>
+    <rdfs:comment>The property relating the Complaint and Request to an Agent. A complaint and a request are made by an agent.</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <rdfs:domain rdf:nodeID="A4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A6"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:nodeID="A8"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A10"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint_Recipient">
+    <rdfs:label>Complaint Recipient</rdfs:label>
+    <rdfs:comment>Person, organization, or its representative, receiving a complaint (ISO 10002:2014). This concept varies from the addressee, which may be the Recipient, or any other that shall receive the complaint. The Complainant Recipient may be implicit in some datasets.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <owl:equivalentClass rdf:nodeID="A11"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo">
+    <rdfs:label>addressed to</rdfs:label>
+    <rdfs:comment>The property describing the agent recipient of the complaint or recipient of the request</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <rdfs:domain rdf:nodeID="A12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy">
+    <rdfs:label>supported by</rdfs:label>
+    <rdfs:comment>The object property stating that a Fact is supported by an Evidence.</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"/>
+    <rdfs:domain rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl">
+    <cpannotationschema:hasConsequences>Heterogeneous models for complaints can be aligned to this pattern, which then acts as a semantic facade to different complaint management applications (such as complaint handling process, customer complaint management, customer relation management)</cpannotationschema:hasConsequences>
+    <dct:creator>Cristiana Santos</dct:creator>
+    <dct:contibutor>Victor Rodriguez</dct:contibutor>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <cpannotationschema:hasIntent>To represent the core constituents of a complaint</cpannotationschema:hasIntent>
+    <cpannotationschema:coversRequirements>What is the claim of the complainant?</cpannotationschema:coversRequirements>
+    <dct:title>Complaint Ontology Pattern</dct:title>
+    <cpannotationschema:coversRequirements>Which facts happened in 'this' date or in 'this' place?</cpannotationschema:coversRequirements>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <cpannotationschema:coversRequirements>Which medium was used to express the complaint?</cpannotationschema:coversRequirements>
+    <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+    <dct:contibutor>Cedric Pruski</dct:contibutor>
+    <dct:contibutor>Leon van der Torre</dct:contibutor>
+    <cpannotationschema:coversRequirements>What motivates the complaint?</cpannotationschema:coversRequirements>
+    <cpannotationschema:scenarios>A complaint refers to the narrated facts of an agent, grounded with motive and a request, through a specific medium (used to generate the complaint document), where evidence may support the facts.</cpannotationschema:scenarios>
+    <cpannotationschema:coversRequirements>Who is the complaint recipient?</cpannotationschema:coversRequirements>
+    <cpannotationschema:coversRequirements>Who is involved in this complaint?</cpannotationschema:coversRequirements>
+    <cpannotationschema:coversRequirements>What evidences are used to prove the narrated fact?</cpannotationschema:coversRequirements>
+    <dct:contibutor>Pompeu Casanovas</dct:contibutor>
+    <dct:contibutor>Marcos Da Silveira</dct:contibutor>
+    <cpannotationschema:coversRequirements>Which facts describe the complaint?</cpannotationschema:coversRequirements>
+    <dct:date>2016-04-24</dct:date>
+    <dct:rights>This ontology is distributed under a Creative Commons CC-BY 4.0 license - https://creativecommons.org/licenses/by/4.0/</dct:rights>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A13"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy">
+    <rdfs:label>justified by</rdfs:label>
+    <rdfs:comment>Expresses the relation between the Motivation and the Fact(s).</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <rdfs:domain rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <owl:unionOf rdf:nodeID="A18"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation">
+    <rdfs:label>has complaint motivation</rdfs:label>
+    <rdfs:comment>The relation expressing the Motivation of a Complaint.</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+    <rdfs:domain rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <owl:inverseOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:unionOf rdf:nodeID="A2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:rest rdf:nodeID="A23"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn">
+    <rdfs:label>based on</rdfs:label>
+    <rdfs:comment>The property declaring the Facts that are the base of a Complaint.</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <rdfs:domain rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:nodeID="A25"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence">
+    <rdfs:label>Evidence</rdfs:label>
+    <rdfs:comment>Proof(s) supporting the facts described in the complaint. Possibilities of Evidence are receipt, contract, testimony, email, and photo.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <rdfs:subClassOf rdf:nodeID="A26"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <rdfs:comment>An Agent can act, i.e. play the 'actor' role wrt. an action. It is a holder for propositional attitudes. As for this definition, we have adopted LKIF definition of Agent.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <skos:relatedMatch>http://www.estrellaproject.org/lkif-core/expression.owl#Agent</skos:relatedMatch>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"/>
+    <rdfs:label>Agent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    <rdfs:domain rdf:nodeID="A30"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <owl:onProperty rdf:nodeID="A31"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <owl:unionOf rdf:nodeID="A9"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request">
+    <rdfs:label>Request</rdfs:label>
+    <rdfs:comment>A demand, claim or remedy set by the Complainant, e.g., financial compensation, apology, response, resolution, settlement, or other action.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A28"/>
+    <rdfs:subClassOf rdf:nodeID="A17"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <owl:inverseOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <owl:unionOf rdf:nodeID="A24"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:unionOf rdf:nodeID="A14"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:nodeID="A33"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:nodeID="A22"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <owl:inverseOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest">
+    <rdfs:label>has request</rdfs:label>
+    <rdfs:comment>The property indicating the Request in the Complaint.</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <rdfs:domain rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <owl:inverseOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#supportedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:rest rdf:nodeID="A37"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:inverseOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#madeBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasThirdParty">
+    <rdfs:label>has third party</rdfs:label>
+    <rdfs:comment>Property describing agents which are third parties in a complaint</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <rdfs:domain rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium">
+    <skos:closeMatch rdf:resource="http://www.estrellaproject.org/lkif-core/expression.owl#Medium"/>
+    <rdfs:label>Medium</rdfs:label>
+    <rdfs:comment>A medium is a bearer of expressions, i.e. externalized propositions. Propositions become expressions once they are externalized through some medium (LKIF imported definition). In some complaint datasets, the medium is implicit.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint">
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"/>
+    <rdfs:subClassOf rdf:nodeID="A19"/>
+    <rdfs:subClassOf rdf:nodeID="A16"/>
+    <rdfs:subClassOf rdf:nodeID="A29"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Evidence"/>
+    <rdfs:label>Complaint</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A27"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <rdfs:comment>This class is the cornerstone for the pattern. We defined as an expression of dissatisfaction issued by a Complainant against a Complaint-Recipient, describing the facts, motivations, where a response or resolution is explicitly or implicitly expected. The complaint entity differs from the act of complaining, which is out of the scope of this ODP , as it is out of our use-case</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A38"/>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#ThirdParty">
+    <rdfs:label>Third Party</rdfs:label>
+    <rdfs:comment>Any natural persons or any legal person, who is acting, including through any person acting in his name or on his behalf, for purposes not related to the object of the complaint.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <owl:equivalentClass rdf:nodeID="A39"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:unionOf rdf:nodeID="A40"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <owl:onProperty rdf:nodeID="A21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <owl:onProperty rdf:nodeID="A32"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:nodeID="A34"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:rest rdf:nodeID="A42"/>
+    <rdf:first rdf:nodeID="A43"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complainant">
+    <rdfs:label>Complainant</rdfs:label>
+    <rdfs:comment>Person, organization, or its representative, making a complaint (ISO 10002:2014). The Complainant may be implicit in some datasets.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <owl:equivalentClass rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn">
+    <rdfs:label>expressed in</rdfs:label>
+    <rdfs:comment>The property that declares by which Medium the Complaint is expressed.</rdfs:comment>
+    <rdfs:range rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Medium"/>
+    <rdfs:domain rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:rest rdf:nodeID="A36"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:nodeID="A20"/>
+    <rdf:first rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Agent"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#addressedTo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Motivation">
+    <rdfs:label>Motivation</rdfs:label>
+    <rdfs:comment>Subjective motive of dissatisfaction, justified by facts.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Request"/>
+    <rdfs:subClassOf rdf:nodeID="A44"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Complaint"/>
+    <owl:onProperty rdf:nodeID="A35"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <owl:someValuesFrom rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#Fact"/>
+    <owl:onProperty rdf:resource="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

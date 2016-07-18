@@ -1,0 +1,932 @@
+<h2>4. Cross reference for cop.owl classes, properties and dataproperties</h2>
+This section provides details for each class and property defined by cop.owl.
+<div id="classes">
+   <h2>Classes</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#Agent"
+            title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+      </li>
+      <li>
+         <a href="#Complainant"
+            title="https://w3id.org/vocabulary/cop#Complainant">Complainant</a>
+      </li>
+      <li>
+         <a href="#Complaint"
+            title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+      </li>
+      <li>
+         <a href="#Complaint_Recipient"
+            title="https://w3id.org/vocabulary/cop#Complaint_Recipient">Complaint Recipient</a>
+      </li>
+      <li>
+         <a href="#Evidence"
+            title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+      </li>
+      <li>
+         <a href="#Fact"
+            title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+      </li>
+      <li>
+         <a href="#Medium"
+            title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+      </li>
+      <li>
+         <a href="#Motivation"
+            title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+      </li>
+      <li>
+         <a href="#Request"
+            title="https://w3id.org/vocabulary/cop#Request">Request</a>
+      </li>
+      <li>
+         <a href="#ThirdParty"
+            title="https://w3id.org/vocabulary/cop#ThirdParty">Third Party</a>
+      </li>
+   </ul>
+   <div class="entity" id="Agent">
+      <h3>Agent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Agent</p>
+      <div class="comment">
+         <span class="markdown">An Agent can act, i.e. play the 'actor' role wrt. an action. It is a holder for propositional attitudes. As for this definition, we have adopted LKIF definition of Agent.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Complainant"
+               title="https://w3id.org/vocabulary/cop#Complainant">Complainant</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Complaint_Recipient"
+               title="https://w3id.org/vocabulary/cop#Complaint_Recipient">Complaint Recipient</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ThirdParty"
+               title="https://w3id.org/vocabulary/cop#ThirdParty">Third Party</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#addressedTo"
+               title="https://w3id.org/vocabulary/cop#addressedTo">addressed to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasThirdParty"
+               title="https://w3id.org/vocabulary/cop#hasThirdParty">has third party</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#madeBy"
+               title="https://w3id.org/vocabulary/cop#madeBy">made by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Evidence"
+               title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Medium"
+               title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Motivation"
+               title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Request"
+               title="https://w3id.org/vocabulary/cop#Request">Request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Complainant">
+      <h3>Complainant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Complainant</p>
+      <div class="comment">
+         <span class="markdown">Person, organization, or its representative, making a complaint (ISO 10002:2014). The Complainant may be implicit in some datasets.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="logic">inverse</span> 
+            <a href="#madeBy"
+               title="https://w3id.org/vocabulary/cop#madeBy">made by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Complaint">
+      <h3>Complaint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Complaint</p>
+      <div class="comment">
+         <span class="markdown">This class is the cornerstone for the pattern. We defined as an expression of dissatisfaction issued by a Complainant against a Complaint-Recipient, describing the facts, motivations, where a response or resolution is explicitly or implicitly expected. The complaint entity differs from the act of complaining, which is out of the scope of this ODP , as it is out of our use-case</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#addressedTo"
+               title="https://w3id.org/vocabulary/cop#addressedTo">addressed to</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#basedOn"
+               title="https://w3id.org/vocabulary/cop#basedOn">based on</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#expressedIn"
+               title="https://w3id.org/vocabulary/cop#expressedIn">expressed in</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Medium"
+               title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasComplaintMotivation"
+               title="https://w3id.org/vocabulary/cop#hasComplaintMotivation">has complaint motivation</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Motivation"
+               title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#madeBy"
+               title="https://w3id.org/vocabulary/cop#madeBy">made by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#basedOn"
+               title="https://w3id.org/vocabulary/cop#basedOn">based on</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#expressedIn"
+               title="https://w3id.org/vocabulary/cop#expressedIn">expressed in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasComplaintMotivation"
+               title="https://w3id.org/vocabulary/cop#hasComplaintMotivation">has complaint motivation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRequest"
+               title="https://w3id.org/vocabulary/cop#hasRequest">has request</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasThirdParty"
+               title="https://w3id.org/vocabulary/cop#hasThirdParty">has third party</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Evidence"
+               title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Medium"
+               title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Motivation"
+               title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Request"
+               title="https://w3id.org/vocabulary/cop#Request">Request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Complaint_Recipient">
+      <h3>Complaint Recipient<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Complaint_Recipient</p>
+      <div class="comment">
+         <span class="markdown">Person, organization, or its representative, receiving a complaint (ISO 10002:2014). This concept varies from the addressee, which may be the Recipient, or any other that shall receive the complaint. The Complainant Recipient may be implicit in some datasets.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>(<span class="logic">inverse</span> 
+            <a href="#addressedTo"
+               title="https://w3id.org/vocabulary/cop#addressedTo">addressed to</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>) <span class="logic">or</span> (<span class="logic">inverse</span> 
+            <a href="#addressedTo"
+               title="https://w3id.org/vocabulary/cop#addressedTo">addressed to</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Request"
+               title="https://w3id.org/vocabulary/cop#Request">Request</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Evidence">
+      <h3>Evidence<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Evidence</p>
+      <div class="comment">
+         <span class="markdown">Proof(s) supporting the facts described in the complaint. Possibilities of Evidence are receipt, contract, testimony, email, and photo.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="logic">inverse</span> 
+            <a href="#supportedBy"
+               title="https://w3id.org/vocabulary/cop#supportedBy">supported by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#supportedBy"
+               title="https://w3id.org/vocabulary/cop#supportedBy">supported by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Medium"
+               title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Motivation"
+               title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Request"
+               title="https://w3id.org/vocabulary/cop#Request">Request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Fact">
+      <h3>Fact<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Fact</p>
+      <div class="comment">
+         <span class="markdown">Proposition about something described in a complaint. Facts are observed events by the complainant.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#supportedBy"
+               title="https://w3id.org/vocabulary/cop#supportedBy">supported by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#basedOn"
+               title="https://w3id.org/vocabulary/cop#basedOn">based on</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#justifiedBy"
+               title="https://w3id.org/vocabulary/cop#justifiedBy">justified by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Evidence"
+               title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Motivation"
+               title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Request"
+               title="https://w3id.org/vocabulary/cop#Request">Request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Medium">
+      <h3>Medium<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Medium</p>
+      <div class="comment">
+         <span class="markdown">A medium is a bearer of expressions, i.e. externalized propositions. Propositions become expressions once they are externalized through some medium (LKIF imported definition). In some complaint datasets, the medium is implicit.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#expressedIn"
+               title="https://w3id.org/vocabulary/cop#expressedIn">expressed in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Evidence"
+               title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Motivation"
+               title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Request"
+               title="https://w3id.org/vocabulary/cop#Request">Request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Motivation">
+      <h3>Motivation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Motivation</p>
+      <div class="comment">
+         <span class="markdown">Subjective motive of dissatisfaction, justified by facts.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#justifiedBy"
+               title="https://w3id.org/vocabulary/cop#justifiedBy">justified by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#justifiedBy"
+               title="https://w3id.org/vocabulary/cop#justifiedBy">justified by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasComplaintMotivation"
+               title="https://w3id.org/vocabulary/cop#hasComplaintMotivation">has complaint motivation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Evidence"
+               title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Medium"
+               title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Request"
+               title="https://w3id.org/vocabulary/cop#Request">Request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Request">
+      <h3>Request<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#Request</p>
+      <div class="comment">
+         <span class="markdown">A demand, claim or remedy set by the Complainant, e.g., financial compensation, apology, response, resolution, settlement, or other action.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#addressedTo"
+               title="https://w3id.org/vocabulary/cop#addressedTo">addressed to</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#madeBy"
+               title="https://w3id.org/vocabulary/cop#madeBy">made by</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasRequest"
+               title="https://w3id.org/vocabulary/cop#hasRequest">has request</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Evidence"
+               title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Fact"
+               title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Medium"
+               title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Motivation"
+               title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ThirdParty">
+      <h3>Third Party<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#ThirdParty</p>
+      <div class="comment">
+         <span class="markdown">Any natural persons or any legal person, who is acting, including through any person acting in his name or on his behalf, for purposes not related to the object of the complaint.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="logic">inverse</span> 
+            <a href="#hasThirdParty"
+               title="https://w3id.org/vocabulary/cop#hasThirdParty">has third party</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Complaint"
+               title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Agent"
+               title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Properties</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#addressedTo"
+            title="https://w3id.org/vocabulary/cop#addressedTo">addressed to</a>
+      </li>
+      <li>
+         <a href="#basedOn"
+            title="https://w3id.org/vocabulary/cop#basedOn">based on</a>
+      </li>
+      <li>
+         <a href="#expressedIn"
+            title="https://w3id.org/vocabulary/cop#expressedIn">expressed in</a>
+      </li>
+      <li>
+         <a href="#hasComplaintMotivation"
+            title="https://w3id.org/vocabulary/cop#hasComplaintMotivation">has complaint motivation</a>
+      </li>
+      <li>
+         <a href="#hasRequest"
+            title="https://w3id.org/vocabulary/cop#hasRequest">has request</a>
+      </li>
+      <li>
+         <a href="#hasThirdParty"
+            title="https://w3id.org/vocabulary/cop#hasThirdParty">has third party</a>
+      </li>
+      <li>
+         <a href="#justifiedBy"
+            title="https://w3id.org/vocabulary/cop#justifiedBy">justified by</a>
+      </li>
+      <li>
+         <a href="#madeBy"
+            title="https://w3id.org/vocabulary/cop#madeBy">made by</a>
+      </li>
+      <li>
+         <a href="#supportedBy"
+            title="https://w3id.org/vocabulary/cop#supportedBy">supported by</a>
+      </li>
+   </ul>
+   <div class="entity" id="addressedTo">
+      <h3>addressed to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#addressedTo</p>
+      <div class="comment">
+         <span class="markdown">The property describing the agent recipient of the complaint or recipient of the request</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Request"
+                  title="https://w3id.org/vocabulary/cop#Request">Request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Agent"
+                  title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="basedOn">
+      <h3>based on<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#basedOn</p>
+      <div class="comment">
+         <span class="markdown">The property declaring the Facts that are the base of a Complaint.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Fact"
+                  title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="expressedIn">
+      <h3>expressed in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#expressedIn</p>
+      <div class="comment">
+         <span class="markdown">The property that declares by which Medium the Complaint is expressed.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Medium"
+                  title="https://w3id.org/vocabulary/cop#Medium">Medium</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasComplaintMotivation">
+      <h3>has complaint motivation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#hasComplaintMotivation</p>
+      <div class="comment">
+         <span class="markdown">The relation expressing the Motivation of a Complaint.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Motivation"
+                  title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRequest">
+      <h3>has request<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#hasRequest</p>
+      <div class="comment">
+         <span class="markdown">The property indicating the Request in the Complaint.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Request"
+                  title="https://w3id.org/vocabulary/cop#Request">Request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasThirdParty">
+      <h3>has third party<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#hasThirdParty</p>
+      <div class="comment">
+         <span class="markdown">Property describing agents which are third parties in a complaint</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Agent"
+                  title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="justifiedBy">
+      <h3>justified by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#justifiedBy</p>
+      <div class="comment">
+         <span class="markdown">Expresses the relation between the Motivation and the Fact(s).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Motivation"
+                  title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Fact"
+                  title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="madeBy">
+      <h3>made by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#madeBy</p>
+      <div class="comment">
+         <span class="markdown">The property relating the Complaint and Request to an Agent. A complaint and a request are made by an agent.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Request"
+                  title="https://w3id.org/vocabulary/cop#Request">Request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Agent"
+                  title="https://w3id.org/vocabulary/cop#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="supportedBy">
+      <h3>supported by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#supportedBy</p>
+      <div class="comment">
+         <span class="markdown">The object property stating that a Fact is supported by an Evidence.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Fact"
+                  title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Evidence"
+                  title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Properties</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#hasSpace"
+            title="https://w3id.org/vocabulary/cop#hasSpace">
+            <span>has space</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasStampTime"
+            title="https://w3id.org/vocabulary/cop#hasStampTime">
+            <span>has stamp time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasTimeOccurrence"
+            title="https://w3id.org/vocabulary/cop#hasTimeOccurrence">
+            <span>has time occurrence</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasSpace">
+      <h3>has space<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#hasSpace</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Evidence"
+                  title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Fact"
+                  title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Motivation"
+                  title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Request"
+                  title="https://w3id.org/vocabulary/cop#Request">Request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStampTime">
+      <h3>has stamp time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#hasStampTime</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Evidence"
+                  title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Fact"
+                  title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Motivation"
+                  title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Request"
+                  title="https://w3id.org/vocabulary/cop#Request">Request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date time stamp</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTimeOccurrence">
+      <h3>has time occurrence<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/vocabulary/cop#hasTimeOccurrence</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Complaint"
+                  title="https://w3id.org/vocabulary/cop#Complaint">Complaint</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Evidence"
+                  title="https://w3id.org/vocabulary/cop#Evidence">Evidence</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Fact"
+                  title="https://w3id.org/vocabulary/cop#Fact">Fact</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Motivation"
+                  title="https://w3id.org/vocabulary/cop#Motivation">Motivation</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Request"
+                  title="https://w3id.org/vocabulary/cop#Request">Request</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div>
