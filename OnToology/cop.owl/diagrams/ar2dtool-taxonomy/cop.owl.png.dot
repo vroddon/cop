@@ -1,9 +1,9 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:Agent" "base:Complaint_Recipient" "base:ThirdParty" "base:Complainant" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:ThirdParty" "base:Agent" "base:Complainant" "base:Complaint_Recipient" ; /*classes style*/
+	"base:Complaint_Recipient" -> "base:Agent" [ label = "rdfs:subClassOf" ];
 	"base:ThirdParty" -> "base:Agent" [ label = "rdfs:subClassOf" ];
 	"base:Complainant" -> "base:Agent" [ label = "rdfs:subClassOf" ];
-	"base:Complaint_Recipient" -> "base:Agent" [ label = "rdfs:subClassOf" ];
 
 }

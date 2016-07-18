@@ -67,29 +67,41 @@ P08. Missing annotations<span style="float: right;">3 cases detected. <span clas
 </div>
 <div id="collapse0" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Ontology terms lack annotations properties. This kind of properties improves the ontology understanding and usability from a user point of view.</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasTimeOccurrence</a></li><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasStampTime</a></li><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasSpace</a></li></ul></div>
+<p>Ontology terms lack annotations properties. This kind of properties improves the ontology understanding and usability from a user point of view.</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="https://w3id.org/vocabulary/cop#hasTimeOccurrence" target="_blank">https://w3id.org/vocabulary/cop#hasTimeOccurrence</a></li><li><a href="https://w3id.org/vocabulary/cop#hasStampTime" target="_blank">https://w3id.org/vocabulary/cop#hasStampTime</a></li><li><a href="https://w3id.org/vocabulary/cop#hasSpace" target="_blank">https://w3id.org/vocabulary/cop#hasSpace</a></li></ul></div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapse1">
-P13. Missing inverse relationships<span style="float: right;">5 cases detected. <span class="label label-minor">Minor</span></span></a>
+P11. Missing domain or range in properties<span style="float: right;">2 cases detected. <span class="label label-warning">Important</span></span></a>
 </h4>
 </div>
 <div id="collapse1" class="panel-collapse collapse">
 <div class="panel-body">
-<p>This pitfall appears when a relationship (except for the symmetric ones) has not an inverse relationship defined within the ontology. For example, the case in which the ontology developer omits the inverse definition between the relations "hasLanguageCode" and "isCodeOf", or between "hasReferee" and "isRefereeOf".</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#justifiedBy</a></li><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasRequest</a></li><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#hasComplaintMotivation</a></li><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#expressedIn</a></li><li><a href="http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn" target="_blank">http://raw.githubusercontent.com/Rel-incode/cop/master/cop.owl#basedOn</a></li><ul></div>
+<p>Relationships and/or attributes without domain or range (or none of them) are included in the ontology. There are situations in which the relation is very general and the range should be the most general concept "Thing". However, in other cases, the relations are more specific and it could be a good practice to specify its domain and/or range. An example of this type of pitfall is to create the relationship "hasWritten" in an ontology about art in which the relationship domain should be "Writer" and the relationship range should be "LiteraryWork". This pitfall is related to the common error when defining ranges and domains described in [3].</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="https://w3id.org/vocabulary/cop#hasSpace" target="_blank">https://w3id.org/vocabulary/cop#hasSpace</a></li><li><a href="https://w3id.org/vocabulary/cop#hasTimeOccurrence" target="_blank">https://w3id.org/vocabulary/cop#hasTimeOccurrence</a></li></ul></div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapse2">
-P22. Using different naming criteria in the ontology<span style="float: right;"> ontology *<span class="label label-minor">Minor</span></span></a>
+P13. Missing inverse relationships<span style="float: right;">5 cases detected. <span class="label label-minor">Minor</span></span></a>
 </h4>
 </div>
 <div id="collapse2" class="panel-collapse collapse">
+<div class="panel-body">
+<p>This pitfall appears when a relationship (except for the symmetric ones) has not an inverse relationship defined within the ontology. For example, the case in which the ontology developer omits the inverse definition between the relations "hasLanguageCode" and "isCodeOf", or between "hasReferee" and "isRefereeOf".</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="https://w3id.org/vocabulary/cop#part_of" target="_blank">https://w3id.org/vocabulary/cop#part_of</a></li><li><a href="https://w3id.org/vocabulary/cop#justifiedBy" target="_blank">https://w3id.org/vocabulary/cop#justifiedBy</a></li><li><a href="https://w3id.org/vocabulary/cop#has_complaint_motivation" target="_blank">https://w3id.org/vocabulary/cop#has_complaint_motivation</a></li><li><a href="https://w3id.org/vocabulary/cop#expressedIn" target="_blank">https://w3id.org/vocabulary/cop#expressedIn</a></li><li><a href="https://w3id.org/vocabulary/cop#basedOn" target="_blank">https://w3id.org/vocabulary/cop#basedOn</a></li><ul></div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" href="#collapse3">
+P22. Using different naming criteria in the ontology<span style="float: right;"> ontology *<span class="label label-minor">Minor</span></span></a>
+</h4>
+</div>
+<div id="collapse3" class="panel-collapse collapse">
 <div class="panel-body">
 <p>Ontology elements are not named using the same convention within the whole ontology. It is considered a good practice that the rules and style of lexical encoding for naming the different ontology elements is homogeneous within the ontology. One possibility for rules is that concept names start with capital letters and property names start with non-capital letters. In the case of style, there are different options such as camel case, hyphen style, underscore style, and the combinations. Some notions about naming conventions are provided in [2].</p><p>*This pitfall applies to the ontology in general instead of specific elements</p></div>
 </div>
@@ -97,13 +109,13 @@ P22. Using different naming criteria in the ontology<span style="float: right;">
 <div class="panel panel-default">
 <div class="panel-heading">
 <h4 class="panel-title">
-<a data-toggle="collapse" href="#collapse3">
-P34. Untyped class<span style="float: right;">5 cases detected. <span class="label label-warning">Important</span></span></a>
+<a data-toggle="collapse" href="#collapse4">
+P34. Untyped class<span style="float: right;">4 cases detected. <span class="label label-warning">Important</span></span></a>
 </h4>
 </div>
-<div id="collapse3" class="panel-collapse collapse">
+<div id="collapse4" class="panel-collapse collapse">
 <div class="panel-body">
-<p>A resource is used as a class, e.g. appearing as the object of an "rdf:type", "rdfs:domain", or "rdfs:range" statement, or as the subject or object of an "rdfs:subClassOf" statement, without having been declared as a Class.</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="fd4899c:155155fe09a:-233a" target="_blank">fd4899c:155155fe09a:-233a</a></li><li><a href="fd4899c:155155fe09a:-2333" target="_blank">fd4899c:155155fe09a:-2333</a></li><li><a href="fd4899c:155155fe09a:-233d" target="_blank">fd4899c:155155fe09a:-233d</a></li><li><a href="fd4899c:155155fe09a:-2338" target="_blank">fd4899c:155155fe09a:-2338</a></li><li><a href="fd4899c:155155fe09a:-2346" target="_blank">fd4899c:155155fe09a:-2346</a></li></ul></div>
+<p>A resource is used as a class, e.g. appearing as the object of an "rdf:type", "rdfs:domain", or "rdfs:range" statement, or as the subject or object of an "rdfs:subClassOf" statement, without having been declared as a Class.</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="fd4899c:155155fe09a:-1f5a" target="_blank">fd4899c:155155fe09a:-1f5a</a></li><li><a href="fd4899c:155155fe09a:-1f65" target="_blank">fd4899c:155155fe09a:-1f65</a></li><li><a href="fd4899c:155155fe09a:-1f5d" target="_blank">fd4899c:155155fe09a:-1f5d</a></li><li><a href="fd4899c:155155fe09a:-1f5f" target="_blank">fd4899c:155155fe09a:-1f5f</a></li></ul></div>
 </div>
 </div>
 </div>
